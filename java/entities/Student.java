@@ -57,5 +57,10 @@ public class Student extends Person implements Displayable {
         System.out.println("Fee: " + fee);
     }
 
+    @Override
+    public String displaySummary() {
+        return "";
+    }
+
     
 }

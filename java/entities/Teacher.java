@@ -33,4 +33,11 @@ public class Teacher extends Person {
         this.subject = subject;
     }
     
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Subject: " + subject);
+        System.out.println("Experience: " + yearsExperience + " years");
+    }
+
 }

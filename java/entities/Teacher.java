@@ -32,12 +32,19 @@ public class Teacher extends Person {
     public void setSubject(String subject) {
         this.subject = subject;
     }
-    
+
     @Override
     public void displayInfo() {
         super.displayInfo();
         System.out.println("Subject: " + subject);
         System.out.println("Experience: " + yearsExperience + " years");
     }
+
+    @Override
+    public String toString() {
+        return "Teacher [ID=" + getId() + ", Name=" + getFirstName() + " " + getLastName() +
+                ", Subject=" + subject + ", Experience=" + yearsExperience + "]";
+    }
+
 
 }

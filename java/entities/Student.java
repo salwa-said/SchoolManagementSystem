@@ -62,5 +62,9 @@ public class Student extends Person implements Displayable {
         return "";
     }
 
-    
+    @Override
+    public String toString() {
+        return "Student [ID=" + getId() + ", Name=" + getFirstName() + " " + getLastName() +
+                ", Grade=" + gradeLevel + ", Fee=" + fee + "]";
+    }
 }

@@ -35,5 +35,27 @@ public class Student extends Person implements Displayable {
         this.gradeLevel = gradeLevel;
     }
 
+    public void updateContact(Integer newFee) {
+        setFee(newFee);
+    }
 
+    // Inside Teacher
+    public void updateSalary(double newBonus) {
+        if (newBonus < 0) {
+            System.out.println("Error: Salary bonus cannot be negative.");
+        } else {
+            System.out.println("Updating salary bonus...");
+        }
+    }
+
+
+// method
+    @Override
+    public void displayInfo(){
+        super.displayInfo();
+        System.out.println("Grade Level: " + gradeLevel);
+        System.out.println("Fee: " + fee);
+    }
+
+    
 }

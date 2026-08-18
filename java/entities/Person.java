@@ -54,5 +54,13 @@ public class Person {
     }
 
 
+    public void displayInfo(){
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + firstName + " " + lastName);
+        System.out.println("Age: " + age);
+    }
+
+
+
 
 }

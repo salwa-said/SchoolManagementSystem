@@ -60,6 +60,20 @@ public class Person {
         System.out.println("Age: " + age);
     }
 
+    @Override
+    public String toString() {
+        return "Person [ID=" + id + ", Name=" + firstName + " " + lastName +
+                ", Age=" + age + "]";
+    }
+
+
+    public boolean equals(Integer id) {
+        return (this.id==id);
+
+    }
+
+
+
 
 
 

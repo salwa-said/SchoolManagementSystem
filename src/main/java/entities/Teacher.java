@@ -45,6 +45,4 @@ public class Teacher extends Person {
         return "Teacher [ID=" + getId() + ", Name=" + getFirstName() + " " + getLastName() +
                 ", Subject=" + subject + ", Experience=" + yearsExperience + "]";
     }
-
-
 }
